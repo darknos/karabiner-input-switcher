@@ -2,7 +2,7 @@
   "title": "Change Command_R Key (Right Command) !!!!",
   "rules": [
     {
-      "description": "Switch KAWA to English if Command_L is pressed alone.",
+      "description": "Switch Input Source to ABC if Command_L is pressed alone.",
       "manipulators": [
         {
           "type": "basic",
@@ -31,7 +31,7 @@
       ]
   },
   {
-	"description": "Switch KAWA to Russian if Command_R is pressed alone.",
+	"description": "Switch Input Source to Russian if Command_R is pressed alone.",
 	"manipulators": [
 	  {
 		"type": "basic",
@@ -61,7 +61,7 @@
 	]
 },
 {
-  "description": "Switch KAWA to Ukrainain if Option_R is pressed alone.",
+  "description": "Switch Input Source to Ukrainain if Option_R is pressed alone.",
   "manipulators": [
 	{
 	  "type": "basic",
