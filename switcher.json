@@ -1,5 +1,5 @@
 {
-	"title": "Use single click up/down (Caps, Fn, LCmd, RCmd, RAlt) for change input sources",
+	"title": "Use pressed alone Caps, Fn, LCmd, RCmd, RAlt for change input sources",
 	"rules": [
 		{
 			"description": "Switch Input Source to ABC if Command_L is pressed alone.",
