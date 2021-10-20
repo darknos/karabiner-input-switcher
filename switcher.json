@@ -1,0 +1,93 @@
+{
+  "title": "Change Command_R Key (Right Command) !!!!",
+  "rules": [
+    {
+      "description": "Switch KAWA to English if Command_L is pressed alone.",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_command",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_command"
+            }
+          ],
+          "to_if_alone": [
+            {
+				"select_input_source": {
+					"input_source_id": "com.apple.keylayout.ABC",
+					"language": "en"
+				}			              			
+			}
+          ]
+        }
+      ]
+  },
+  {
+	"description": "Switch KAWA to Russian if Command_R is pressed alone.",
+	"manipulators": [
+	  {
+		"type": "basic",
+		"from": {
+		  "key_code": "right_command",
+		  "modifiers": {
+			"optional": [
+			  "any"
+			]
+		  }
+		},
+		"to": [
+		  {
+			"key_code": "right_command"
+		  }
+		],
+		"to_if_alone": [
+		  {
+			  "select_input_source": {
+				  "input_source_id": "com.apple.keylayout.Russian",
+				  "language": "ru"
+			  }			              
+		  
+		  }
+		]
+	  }
+	]
+},
+{
+  "description": "Switch KAWA to Ukrainain if Option_R is pressed alone.",
+  "manipulators": [
+	{
+	  "type": "basic",
+	  "from": {
+		"key_code": "right_option",
+		"modifiers": {
+		  "optional": [
+			"any"
+		  ]
+		}
+	  },
+	  "to": [
+		{
+		  "key_code": "right_option"
+		}
+	  ],
+	  "to_if_alone": [
+		{
+			"select_input_source": {
+				"input_source_id": "com.apple.keylayout.Ukrainian",
+        		"language": "uk"
+			}			              
+		}
+	  ]
+	}
+  ]
+}
+  ]
+}
