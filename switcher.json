@@ -1,93 +1,147 @@
 {
-  "title": "Change Command_R Key (Right Command) !!!!",
-  "rules": [
-    {
-      "description": "Switch Input Source to ABC if Command_L is pressed alone.",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_command",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_command"
-            }
-          ],
-          "to_if_alone": [
-            {
-				"select_input_source": {
-					"input_source_id": "com.apple.keylayout.ABC",
-					"language": "en"
-				}			              			
-			}
-          ]
-        }
-      ]
-  },
-  {
-	"description": "Switch Input Source to Russian if Command_R is pressed alone.",
-	"manipulators": [
-	  {
-		"type": "basic",
-		"from": {
-		  "key_code": "right_command",
-		  "modifiers": {
-			"optional": [
-			  "any"
+	"title": "Change Command_R Key (Right Command) !!!!",
+	"rules": [
+		{
+			"description": "Switch Input Source to ABC if Command_L is pressed alone.",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "left_command",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "left_command"
+						}
+					],
+					"to_if_alone": [
+						{
+							"select_input_source": {
+								"input_source_id": "com.apple.keylayout.ABC",
+								"language": "en"
+							}
+						}
+					]
+				}
 			]
-		  }
 		},
-		"to": [
-		  {
-			"key_code": "right_command"
-		  }
-		],
-		"to_if_alone": [
-		  {
-			  "select_input_source": {
-				  "input_source_id": "com.apple.keylayout.Russian",
-				  "language": "ru"
-			  }			              
-		  
-		  }
-		]
-	  }
+		{
+			"description": "Switch Input Source to Russian if Command_R is pressed alone.",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "right_command",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "right_command"
+						}
+					],
+					"to_if_alone": [
+						{
+							"select_input_source": {
+								"input_source_id": "com.apple.keylayout.Russian",
+								"language": "ru"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "Switch Input Source to Ukrainain if Option_R is pressed alone.",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "right_option",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"key_code": "right_option"
+						}
+					],
+					"to_if_alone": [
+						{
+							"select_input_source": {
+								"input_source_id": "com.apple.keylayout.Ukrainian",
+								"language": "uk"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "Switch English with sigle click Fn",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"apple_vendor_top_case_key_code": "keyboard_fn",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+						{
+							"apple_vendor_top_case_key_code": "keyboard_fn"
+						}
+					],
+					"to_if_alone": [
+						{
+							"select_input_source": {
+								"input_source_id": "com.apple.keylayout.ABC",
+								"language": "en"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "Switch Russian with sigle click Caps Lock",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"key_code": "caps_lock",
+						"modifiers": {
+							"optional": [
+								"any"
+							]
+						}
+					},
+					"to": [
+					],
+					"to_if_alone": [
+						{
+							"select_input_source": {
+								"input_source_id": "com.apple.keylayout.Russian",
+								"language": "ru"
+							}
+						}
+					]
+				}
+			]
+		}		
 	]
-},
-{
-  "description": "Switch Input Source to Ukrainain if Option_R is pressed alone.",
-  "manipulators": [
-	{
-	  "type": "basic",
-	  "from": {
-		"key_code": "right_option",
-		"modifiers": {
-		  "optional": [
-			"any"
-		  ]
-		}
-	  },
-	  "to": [
-		{
-		  "key_code": "right_option"
-		}
-	  ],
-	  "to_if_alone": [
-		{
-			"select_input_source": {
-				"input_source_id": "com.apple.keylayout.Ukrainian",
-        		"language": "uk"
-			}			              
-		}
-	  ]
-	}
-  ]
-}
-  ]
 }
